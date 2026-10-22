@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0b1020"><meta name="color-scheme" content="dark light">
 <title>Campus Cash | Student Money Manager</title>
 <style>
 :root{--bg:#0b1020;--panel:#141c30;--panel2:#1a2540;--text:#f4f7ff;--muted:#9ca9c4;--green:#b8f36b;--green2:#8dd63e;--purple:#b9a3ff;--line:#293550;--red:#ff8f9c;--yellow:#ffd777}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#1c2a45 0,#0b1020 45%);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);min-height:100vh}button,input,select{font:inherit}button{cursor:pointer;border:0}.app{max-width:1100px;margin:auto;padding:24px 18px 100px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-.5px;font-size:20px}.logo{width:38px;height:38px;display:grid;place-items:center;background:var(--green);color:#17220d;border-radius:13px;font-size:20px;box-shadow:0 8px 28px #b8f36b30}.pill{border:1px solid var(--line);color:var(--muted);padding:9px 12px;border-radius:99px;background:#121a2d}.welcome h1{font-size:clamp(28px,5vw,42px);line-height:1.06;letter-spacing:-1.5px;margin:8px 0}.welcome p,.muted{color:var(--muted)}.layout{display:grid;grid-template-columns:1.25fr .75fr;gap:16px;margin-top:22px}.panel{background:linear-gradient(145deg,#18223a,#121a2c);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 18px 60px #00000012}.balance{background:linear-gradient(135deg,#c3f67a,#93d84b);color:#17220e;border:0;position:relative;overflow:hidden}.balance:after{content:"₹";position:absolute;right:20px;top:-35px;font-size:180px;font-weight:900;opacity:.08}.balance .muted{color:#3d5425}.big{font-size:clamp(34px,5vw,48px);font-weight:850;letter-spacing:-1.5px;margin:8px 0 18px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#ffffff50;padding:12px;border-radius:15px}.stat small{display:block;color:#3d5425;margin-bottom:6px}.stat strong{font-size:16px}.section-title{font-size:17px;font-weight:800;margin:0 0 14px;letter-spacing:-.3px}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.progress{height:9px;border-radius:99px;background:#2a3650;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;border-radius:99px;background:var(--green);transition:width .6s cubic-bezier(.2,.8,.2,1)}.ring{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--green) var(--pct,50%),#2b3650 0);position:relative;flex-shrink:0}.ring:before{content:"";position:absolute;inset:7px;background:#172039;border-radius:50%}.ring strong{z-index:1;font-size:14px}.comfort{display:flex;align-items:center;gap:16px}.comfort .details{flex:1}.btn{padding:12px 16px;border-radius:14px;background:var(--green);color:#17220e;font-weight:800;transition:transform .16s,filter .16s}.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.btn.secondary{background:#25324b;color:var(--text);border:1px solid var(--line)}.btn.small{padding:8px 11px;font-size:13px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.transactions{display:grid;gap:10px}.tx{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #263149}.tx:last-child{border-bottom:0}.txicon{width:42px;height:42px;border-radius:14px;background:#25314a;display:grid;place-items:center;font-size:20px}.txbody{flex:1;min-width:0}.txbody strong{display:block;font-size:14px}.txbody small{color:var(--muted)}.amount{font-weight:800;white-space:nowrap}.negative{color:var(--red)}.positive{color:var(--green)}.nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:5;display:flex;gap:4px;padding:7px;background:#111a2cdd;backdrop-filter:blur(20px);border:1px solid #34415b;border-radius:22px;box-shadow:0 12px 40px #0008}.nav button{background:transparent;color:var(--muted);padding:10px 13px;border-radius:15px;font-size:12px;font-weight:750;display:flex;align-items:center;gap:7px}.nav button.active{background:var(--green);color:#17220e}.nav .plus-nav{width:52px;height:52px;justify-content:center;align-self:center;padding:0;border-radius:18px;background:var(--green);color:#17220e;font-size:30px;font-weight:900;box-shadow:0 0 0 5px #b8f36b18,0 8px 24px #b8f36b30;transition:transform .2s,box-shadow .2s}.nav .plus-nav:hover{transform:translateY(-4px) rotate(90deg);box-shadow:0 0 0 8px #b8f36b20,0 12px 30px #b8f36b40}.nav .plus-nav:active{transform:scale(.9)}.view{display:none;animation:rise .32s ease}.view.active{display:block}@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985);filter:blur(3px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#1c2a45 0,#0b1020 45%);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);min-height:100vh}button,input,select{font:inherit}button{cursor:pointer;border:0}.app{max-width:1100px;margin:auto;padding:24px 18px 100px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-.5px;font-size:20px}.logo{width:38px;height:38px;display:grid;place-items:center;background:var(--green);color:#17220d;border-radius:13px;font-size:20px;box-shadow:0 8px 28px #b8f36b30}.pill{border:1px solid var(--line);color:var(--muted);padding:9px 12px;border-radius:99px;background:#121a2d}.welcome h1{font-size:clamp(28px,5vw,42px);line-height:1.06;letter-spacing:-1.5px;margin:8px 0}.welcome p,.muted{color:var(--muted)}.layout{display:grid;grid-template-columns:1.25fr .75fr;gap:16px;margin-top:22px}.panel{background:linear-gradient(145deg,#18223a,#121a2c);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 18px 60px #00000012}.balance{background:linear-gradient(135deg,#c3f67a,#93d84b);color:#17220e;border:0;position:relative;overflow:hidden}.balance:after{content:"₹";position:absolute;right:20px;top:-35px;font-size:180px;font-weight:900;opacity:.08}.balance .muted{color:#3d5425}.big{font-size:clamp(34px,5vw,48px);font-weight:850;letter-spacing:-1.5px;margin:8px 0 18px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:#ffffff50;padding:12px;border-radius:15px}.stat small{display:block;color:#3d5425;margin-bottom:6px}.stat strong{font-size:16px}.section-title{font-size:17px;font-weight:800;margin:0 0 14px;letter-spacing:-.3px}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.progress{min-width:0;height:9px;border-radius:99px;background:#2a3650;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;border-radius:99px;background:var(--green);transition:width .6s cubic-bezier(.2,.8,.2,1)}.ring{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--green) var(--pct,50%),#2b3650 0);position:relative;flex-shrink:0}.ring:before{content:"";position:absolute;inset:7px;background:#172039;border-radius:50%}.ring strong{z-index:1;font-size:14px}.comfort{display:flex;align-items:center;gap:16px}.comfort .details{flex:1}.btn{padding:12px 16px;border-radius:14px;background:var(--green);color:#17220e;font-weight:800;transition:transform .16s,filter .16s}.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.btn.secondary{background:#25324b;color:var(--text);border:1px solid var(--line)}.btn.small{padding:8px 11px;font-size:13px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.transactions{display:grid;gap:10px}.tx{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #263149}.tx:last-child{border-bottom:0}.txicon{width:42px;height:42px;border-radius:14px;background:#25314a;display:grid;place-items:center;font-size:20px}.txbody{flex:1;min-width:0}.txbody strong{display:block;font-size:14px}.txbody small{color:var(--muted)}.amount{font-weight:800;white-space:nowrap}.negative{color:var(--red)}.positive{color:var(--green)}.nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:5;display:flex;gap:4px;padding:7px;background:#111a2cdd;backdrop-filter:blur(20px);border:1px solid #34415b;border-radius:22px;box-shadow:0 12px 40px #0008}.nav button{background:transparent;color:var(--muted);padding:10px 13px;border-radius:15px;font-size:12px;font-weight:750;display:flex;align-items:center;gap:7px}.nav button.active{background:var(--green);color:#17220e}.nav .plus-nav{width:52px;height:52px;justify-content:center;align-self:center;padding:0;border-radius:18px;background:var(--green);color:#17220e;font-size:30px;font-weight:900;box-shadow:0 0 0 5px #b8f36b18,0 8px 24px #b8f36b30;transition:transform .2s,box-shadow .2s}.nav .plus-nav:hover{transform:translateY(-4px) rotate(90deg);box-shadow:0 0 0 8px #b8f36b20,0 12px 30px #b8f36b40}.nav .plus-nav:active{transform:scale(.9)}.view{display:none;animation:rise .32s ease}.view.active{display:block}@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985);filter:blur(3px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
 @keyframes popIn{0%{opacity:0;transform:translateY(22px) scale(.92) rotateX(8deg)}65%{opacity:1;transform:translateY(-3px) scale(1.015) rotateX(0)}100%{transform:translateY(0) scale(1)}}
 @keyframes glowPulse{0%,100%{box-shadow:0 0 0 0 #b8f36b00}50%{box-shadow:0 0 0 7px #b8f36b12}}
 @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
@@ -86,7 +86,7 @@ html[data-theme="light"] .choice{background:#fff;border-color:#dce5d7;color:var(
 html[data-theme="light"] .choice.selected{background:#edf7e5;border-color:var(--green)}
 html[data-theme="light"] .field input,html[data-theme="light"] .field select{background:#fff;color:var(--text);border-color:#ccd8c7}
 html[data-theme="light"] .btn.secondary{background:#eef3eb;color:#263325;border-color:#d5dfcf}
-html[data-theme="light"] .progress{background:#e4eadf}html[data-theme="light"] .ring{background:conic-gradient(var(--green) var(--pct,50%),#e1e9dc 0)}html[data-theme="light"] .ring:before{background:#fff}
+html[data-theme="light"] .progress{min-width:0;background:#e4eadf}html[data-theme="light"] .ring{background:conic-gradient(var(--green) var(--pct,50%),#e1e9dc 0)}html[data-theme="light"] .ring:before{background:#fff}
 html[data-theme="light"] .nav{background:#ffffffed;border-color:#d8e2d2;box-shadow:0 12px 40px #26351b20}
 html[data-theme="light"] .nav button{color:#667363}html[data-theme="light"] .nav button.active{color:#17220e}
 html[data-theme="light"] .tx{border-bottom-color:#e4eae0}html[data-theme="light"] .txicon,html[data-theme="light"] .category-chip{background:#f1f5ee;border-color:#dbe4d5;color:#52604e}
@@ -98,7 +98,37 @@ html[data-theme="light"] .stat{background:#ffffffa8}html[data-theme="light"] .st
 .theme-toggle{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
 @media(max-width:560px){.topright{gap:5px}.theme-toggle{font-size:0;padding:9px 11px}.theme-toggle span{font-size:17px}}
 
-</style>
+
+/* Mobile usability and resilient navigation refinements */
+html{scroll-behavior:smooth;scroll-padding-top:18px}
+button,a,input,select,textarea{touch-action:manipulation}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.nav{z-index:20;max-width:560px;left:50%;transform:translateX(-50%);padding-bottom:env(safe-area-inset-bottom)}
+@media(max-width:760px){
+  .app{width:100%;padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));padding-bottom:calc(108px + env(safe-area-inset-bottom))}
+  .top{align-items:flex-start;flex-wrap:wrap}
+  .topright{margin-left:auto;flex-wrap:wrap}
+  .panel{min-width:0;overflow-wrap:anywhere}
+  .row{gap:10px;flex-wrap:wrap}
+  .stats{gap:8px}
+  .stats>*{min-width:0}
+  .nav{bottom:max(8px,env(safe-area-inset-bottom));width:calc(100% - 16px);max-width:560px}
+  .nav button{min-width:0;min-height:52px;padding:8px 4px}
+  .nav .plus-nav{min-width:46px;min-height:46px}
+  .progress{min-width:0;overflow:hidden}
+  .modal-backdrop{padding:10px;align-items:end}
+  .modal{max-height:88dvh;overflow:auto;border-radius:22px 22px 14px 14px;padding:18px}
+  .field input,.field select,button{min-height:42px}
+}
+@media(max-width:380px){
+  .app{padding-left:10px;padding-right:10px}
+  .panel{padding:14px;border-radius:18px}
+  .brand{font-size:18px}
+  .pill{padding:7px 9px}
+  .stats{grid-template-columns:1fr 1fr}
+  .nav .navlabel{font-size:9px}
+}
+\n</style>
 </head>
 <body>
 <div id="toast" class="toast">Saved!</div>
@@ -203,10 +233,10 @@ const todayISO=()=>{let d=new Date();return `${d.getFullYear()}-${String(d.getMo
 const money=n=>"₹"+Math.round(Number(n)||0).toLocaleString("en-IN");
 const dateText=s=>s?new Date(s+"T12:00:00").toLocaleDateString("en-IN",{day:"numeric",month:"short"}):"No date";
 let state={name:"",home:null,pocket:0,savingsReserve:0,allowance:todayISO(),allowanceDays:30,lastBudgetMonth:new Date().toISOString().slice(0,7),comfortLimit:0,accommodation:{roomRent:0,bills:0,pgRent:0,hostelAnnual:0},travelBudget:0,transactions:[],goals:[],friends:[],nextId:1};
-function load(){try{const raw=localStorage.getItem("campusCashV1");if(raw){const x=JSON.parse(raw);if(x&&x.home)state={...state,...x,accommodation:{roomRent:0,bills:0,pgRent:0,hostelAnnual:0,...(x.accommodation||{})},travelBudget:Number(x.travelBudget)||0}}}catch(e){}try{rolloverBudgetMonth()}catch(e){}}
+function load(){try{const raw=localStorage.getItem("campusCashV1");if(raw){const x=JSON.parse(raw);if(x&&typeof x==="object"&&!Array.isArray(x)){state={...state,...x,transactions:Array.isArray(x.transactions)?x.transactions:[],goals:Array.isArray(x.goals)?x.goals:[],upcomingExpenses:Array.isArray(x.upcomingExpenses)?x.upcomingExpenses:[],fixedComfortExpenses:Array.isArray(x.fixedComfortExpenses)?x.fixedComfortExpenses:[],friends:Array.isArray(x.friends)?x.friends:[],accommodation:{roomRent:0,bills:0,pgRent:0,hostelAnnual:0,...(x.accommodation||{})},travelBudget:Number(x.travelBudget)||0};state.nextId=Math.max(1,Number(state.nextId)||1);}}}catch(e){console.warn("Campus Cash could not read saved data safely.",e);try{toast("Saved data could not be read. Your stored copy was left untouched.");}catch(_){}}try{rolloverBudgetMonth()}catch(e){console.warn("Monthly rollover skipped safely.",e)}}
 state.upcomingExpenses=state.upcomingExpenses||[];
 state.fixedComfortExpenses=state.fixedComfortExpenses||[];
-function save(){localStorage.setItem("campusCashV1",JSON.stringify(state))}
+function save(){try{localStorage.setItem("campusCashV1",JSON.stringify(state));return true}catch(e){console.error("Campus Cash save failed.",e);try{toast("Could not save on this device. Export your data or free browser storage.");}catch(_){}return false}}
 function toast(t="Saved!"){ $("toast").textContent=t;$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),1800)}
 function currentMonthKey(){return new Date().toISOString().slice(0,7)}
 function expenseTotal(){const m=currentMonthKey();return state.transactions.filter(t=>t.type==="expense"&&(t.date||"").startsWith(m)).reduce((a,t)=>a+t.amount,0)}
@@ -370,7 +400,7 @@ function applyTheme(theme){const next=theme==='light'?'light':'dark';document.do
 function toggleTheme(){applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark')}
 // One-time reset requested by the user: remove previously saved Campus Cash data.
 // The marker prevents wiping any new data entered after this clean launch.
-try{if(localStorage.getItem('campusCashCleanReset20261022')!=='done'){['campusCashV1','campusCashName','campusCashSnapshotSeen','campusCashIntroSeen','campusCashOnboardingComplete','campusCashTheme'].forEach(k=>localStorage.removeItem(k));localStorage.setItem('campusCashCleanReset20261022','done')}}catch(e){}
+/* Startup never clears existing user data. Reset is available only from Settings. */
 applyTheme(localStorage.getItem('campusCashTheme')||'dark');
 $('themeToggle').onclick=toggleTheme;$('settingsThemeToggle').onclick=toggleTheme;
 
